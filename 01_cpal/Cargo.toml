@@ -1,7 +1,3 @@
 [workspace]
 resolver = "3"
-members = ["examples/*"]
-
-[workspace.dependencies]
-cpal = "0.15"
-anyhow = "1"
+members = ["examples"]
