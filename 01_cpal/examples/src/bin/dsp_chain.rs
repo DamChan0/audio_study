@@ -1,8 +1,10 @@
 use cpal::traits::DeviceTrait;
 use cpal::traits::HostTrait;
 use cpal::traits::StreamTrait;
-use examples::chain::Chain;
+use examples::AudioProcess;
+use examples::chain;
 use examples::effects::volume::Gain;
+use examples::sources;
 use examples::sources::sin_sound::SinSound;
 
 fn main() -> anyhow::Result<()> {
@@ -13,16 +15,16 @@ fn main() -> anyhow::Result<()> {
     let sample_ratate = config.sample_rate().0 as f32;
     let channels = config.channels() as usize;
     let volume = 1.0;
-    let frequency = 20000.0;
+    let frequency = 1000.0;
 
-    let mut chain = Chain::new();
+    let mut chain = chain::Chain::new();
     chain.add(Box::new(SinSound::new(
         sample_ratate,
         channels,
         frequency,
         volume,
     )));
-    chain.add(Box::new(Gain::new(0.3)));
+    chain.add(Box::new(Gain::new(1000.5)));
 
     println!("sample format: {:?}", config.sample_format());
     println!("channels: {:?}", config.channels());
