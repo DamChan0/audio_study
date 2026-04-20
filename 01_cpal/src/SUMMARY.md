@@ -12,3 +12,4 @@
 - [Chapter 9 - 실습 예제: DSP 체인 삽입 구조](chapter-8-dsp-chain.md)
 - [Chapter 10 - 자주 하는 실수와 디버깅](chapter-9-debugging.md)
 - [Chapter 11 - 빠른 복습 요약](chapter-10-review.md)
+- [Chapter 12 - 다음 단계: mod_player 아키텍처 스케치](chapter-11-mod-player-architecture.md)

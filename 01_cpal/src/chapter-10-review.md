@@ -35,7 +35,7 @@ stream 생명주기를 명확히 소유한다.
 
 이제 `cpal` 자체 학습은 1차 완료다.
 
-다음으로 넘어가면 좋은 주제는 아래 둘 중 하나다.
+다음으로 넘어가면 가장 좋은 주제는 `mod_player` 아키텍처 스케치다.
 
-- `mod_player` 아키텍처 스케치
-- `mod_mastering`을 위한 dB / RMS / compressor 기초 수식
+- 이어서 보기: [Chapter 12 - 다음 단계: mod_player 아키텍처 스케치](chapter-11-mod-player-architecture.md)
+- 그 다음 후보: `mod_mastering`을 위한 dB / RMS / compressor 기초 수식

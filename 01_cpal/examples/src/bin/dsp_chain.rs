@@ -1,23 +1,27 @@
 use cpal::traits::DeviceTrait;
 use cpal::traits::HostTrait;
 use cpal::traits::StreamTrait;
-use examples::AudioProcess;
 use examples::chain;
 use examples::effects::volume::Gain;
 use examples::sources;
 use examples::sources::sin_sound::SinSound;
+use examples::AudioProcess;
 
 fn main() -> anyhow::Result<()> {
     let host = cpal::default_host();
     let device = host.default_output_device().expect("no device for output");
     let config = device.default_output_config()?;
+    let buffer_len = match config.buffer_size() {
+        cpal::SupportedBufferSize::Range { max, .. } => *max as usize * config.channels() as usize,
+        cpal::SupportedBufferSize::Unknown => 8192 * config.channels() as usize,
+    };
 
     let sample_ratate = config.sample_rate().0 as f32;
     let channels = config.channels() as usize;
     let volume = 1.0;
     let frequency = 1000.0;
 
-    let mut chain = chain::Chain::new();
+    let mut chain = chain::Chain::new(buffer_len);
     chain.add(Box::new(SinSound::new(
         sample_ratate,
         channels,
