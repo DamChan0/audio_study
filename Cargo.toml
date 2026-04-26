@@ -1,0 +1,14 @@
+[workspace]
+resolver = "3"
+members = [
+    "01_cpal/examples",
+    "02_mod_player_architecture/examples",
+    "03_dsp/examples",
+    "03_dsp_fundamentals/examples",
+    "04_mod_mastering_math/examples",
+    "05_eq_biquad/examples",
+    "06_fft_and_spectrum/examples",
+    "07_audio_file_io/examples",
+    "09_midi_integration/examples",
+    "11_ui_audio_integration/examples",
+]
