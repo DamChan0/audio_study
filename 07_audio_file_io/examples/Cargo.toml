@@ -1,0 +1,23 @@
+[package]
+name = "examples"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1"
+
+[[bin]]
+name = "wav_roundtrip_lab"
+path = "src/bin/wav_roundtrip_lab.rs"
+
+[[bin]]
+name = "sample_format_convert_lab"
+path = "src/bin/sample_format_convert_lab.rs"
+
+[[bin]]
+name = "interleave_lab"
+path = "src/bin/interleave_lab.rs"
+
+[[bin]]
+name = "src_lab"
+path = "src/bin/src_lab.rs"

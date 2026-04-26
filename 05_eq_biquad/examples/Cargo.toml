@@ -1,0 +1,19 @@
+[package]
+name = "examples"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1"
+
+[[bin]]
+name = "lowpass_biquad_lab"
+path = "src/bin/lowpass_biquad_lab.rs"
+
+[[bin]]
+name = "peaking_eq_lab"
+path = "src/bin/peaking_eq_lab.rs"
+
+[[bin]]
+name = "smoothing_lab"
+path = "src/bin/smoothing_lab.rs"

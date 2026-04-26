@@ -1,0 +1,19 @@
+[package]
+name = "examples"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1"
+
+[[bin]]
+name = "single_tone_fft_lab"
+path = "src/bin/single_tone_fft_lab.rs"
+
+[[bin]]
+name = "window_compare_lab"
+path = "src/bin/window_compare_lab.rs"
+
+[[bin]]
+name = "stft_flow_lab"
+path = "src/bin/stft_flow_lab.rs"

@@ -1,0 +1,23 @@
+[package]
+name = "examples"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1"
+
+[[bin]]
+name = "meter_data_lab"
+path = "src/bin/meter_data_lab.rs"
+
+[[bin]]
+name = "spectrum_data_lab"
+path = "src/bin/spectrum_data_lab.rs"
+
+[[bin]]
+name = "waveform_envelope_lab"
+path = "src/bin/waveform_envelope_lab.rs"
+
+[[bin]]
+name = "eq_curve_lab"
+path = "src/bin/eq_curve_lab.rs"

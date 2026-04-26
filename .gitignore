@@ -1,0 +1,13 @@
+# Rust build artifacts
+**/target/
+**/Cargo.lock.bak
+
+# mdBook output
+**/book/
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~

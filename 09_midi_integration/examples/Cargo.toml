@@ -1,0 +1,23 @@
+[package]
+name = "examples"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1"
+
+[[bin]]
+name = "note_to_freq_lab"
+path = "src/bin/note_to_freq_lab.rs"
+
+[[bin]]
+name = "velocity_amp_lab"
+path = "src/bin/velocity_amp_lab.rs"
+
+[[bin]]
+name = "cc_mapping_lab"
+path = "src/bin/cc_mapping_lab.rs"
+
+[[bin]]
+name = "midi_sequence_lab"
+path = "src/bin/midi_sequence_lab.rs"

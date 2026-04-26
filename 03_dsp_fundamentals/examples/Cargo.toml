@@ -1,0 +1,27 @@
+[package]
+name = "examples"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1"
+
+[[bin]]
+name = "oscillator_lab"
+path = "src/bin/oscillator_lab.rs"
+
+[[bin]]
+name = "gain_db_lab"
+path = "src/bin/gain_db_lab.rs"
+
+[[bin]]
+name = "pan_mixer_lab"
+path = "src/bin/pan_mixer_lab.rs"
+
+[[bin]]
+name = "envelope_lab"
+path = "src/bin/envelope_lab.rs"
+
+[[bin]]
+name = "delay_buffer_lab"
+path = "src/bin/delay_buffer_lab.rs"

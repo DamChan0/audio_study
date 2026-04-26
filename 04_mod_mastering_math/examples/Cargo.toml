@@ -1,0 +1,27 @@
+[package]
+name = "examples"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1"
+
+[[bin]]
+name = "rms_peak_lab"
+path = "src/bin/rms_peak_lab.rs"
+
+[[bin]]
+name = "compressor_detector_lab"
+path = "src/bin/compressor_detector_lab.rs"
+
+[[bin]]
+name = "gain_reduction_lab"
+path = "src/bin/gain_reduction_lab.rs"
+
+[[bin]]
+name = "limiter_ceiling_lab"
+path = "src/bin/limiter_ceiling_lab.rs"
+
+[[bin]]
+name = "lufs_flow_lab"
+path = "src/bin/lufs_flow_lab.rs"

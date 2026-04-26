@@ -1,0 +1,10 @@
+[book]
+title = "RuStudio Study"
+authors = ["OpenCode"]
+language = "ko"
+src = "src"
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "navy"
+git-repository-url = ""
