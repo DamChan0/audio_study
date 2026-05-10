@@ -3,10 +3,6 @@ name = "cpal_examples"
 version = "0.1.0"
 edition = "2024"
 
-[lib]
-name = "examples"
-path = "src/lib.rs"
-
 [dependencies]
 cpal = "0.15"
 anyhow = "1"

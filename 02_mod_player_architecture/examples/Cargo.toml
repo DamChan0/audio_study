@@ -7,6 +7,7 @@ edition = "2024"
 cpal = "0.15"
 anyhow = "1"
 crossbeam-channel = "0.5"
+crossterm = "0.29"
 
 # 01의 examples crate를 cpal_examples 라는 이름으로 import
 cpal_examples = { path = "../../01_cpal/examples" }

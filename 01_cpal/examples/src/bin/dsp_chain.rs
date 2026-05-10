@@ -1,11 +1,11 @@
 use cpal::traits::DeviceTrait;
 use cpal::traits::HostTrait;
 use cpal::traits::StreamTrait;
-use examples::chain;
-use examples::effects::volume::Gain;
-use examples::sources;
-use examples::sources::sin_sound::SinSound;
-use examples::AudioProcess;
+use cpal_examples::AudioProcess;
+use cpal_examples::chain;
+use cpal_examples::effects::volume::Gain;
+use cpal_examples::sources;
+use cpal_examples::sources::sin_sound::SinSound;
 
 fn main() -> anyhow::Result<()> {
     let host = cpal::default_host();

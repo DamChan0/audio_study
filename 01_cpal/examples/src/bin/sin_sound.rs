@@ -1,5 +1,5 @@
 use cpal::traits::{DeviceTrait, HostTrait, StreamTrait};
-use examples::AudioProcess;
+use cpal_examples::AudioProcess;
 use std::f32::consts::PI;
 
 const VOLUME: f32 = 9.0; // volume of the sine wave
